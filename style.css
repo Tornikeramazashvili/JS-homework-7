@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #6495ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  cursor: default;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 500px;
+  max-width: 100%;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-group.success input {
+  border-color: green;
+}
+
+.form-group.error input {
+  border-color: red;
+}
+
+.form-group small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-group.error small {
+  color: red;
+  visibility: visible;
+}
+
+.form-group i {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+.form button {
+  font-family: inherit;
+  font-size: 16px;
+  background-color: rgb(62, 122, 233);
+  border: 2px solid rgb(62, 122, 233);
+  color: #fff;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.form button:hover {
+  background-color: rgb(46, 111, 231);
+}
+
+.form-group .error {
+  padding-top: 2px;
+  color: red;
+  font-size: 12px;
+}
